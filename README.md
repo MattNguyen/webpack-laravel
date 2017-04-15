@@ -1,4 +1,4 @@
-#Vue-Cli Template for Larvel + Webpack + Hotreload (HMR)
+# Vue-Cli Template for Larvel + Webpack + Hotreload (HMR)
 
 I had a really tough time getting my workflow rocking between Laravel and VueJS projects. I found myself building my VueJS projects independently in the Webpack dev server and then weirdly porting it into my Laravel projects. This was especially painful on existing projects where I was just trying to add a new component to the project.
 
@@ -6,7 +6,7 @@ I love Evan's approach and setup that you get with vue-cli. I'm sure there are m
 
 This vue-cli template will hopefully help you get off the ground with your VueJS projects. Certainly, any feedback is greatly appreciated. 
 
-##Requirements
+## Requirements
 
 You will need the following installed - If you're new I'll try and walk you through this so give it a go.
 
@@ -14,12 +14,12 @@ You will need the following installed - If you're new I'll try and walk you thro
 * [NodeJS](https://nodejs.org/en/)
 * [vue-cli](https://github.com/vuejs/vue-cli)
 
-####Recommended
+#### Recommended
 
 * [Laravel](https://laravel.com/docs/5.2) Command Line Installer 
 * Vue Dev-tools extension for Chrome
 
-##Install Laravel
+## Install Laravel
 
 I won't go into all the steps to make this happen [Laravel Install Docs](https://laravel.com/docs/5.2) but essentially, here are the steps I take with [Homestead](https://laravel.com/docs/5.2/homestead).
 
@@ -27,11 +27,11 @@ I won't go into all the steps to make this happen [Laravel Install Docs](https:/
 laravel new superproject (or whatever your project name is)
 ```
 
-##Configure Laravel
+## Configure Laravel
 
 I then create a database for this project and edit the ```.env``` file to point to the database by changing ```DB_DATABASE=homestead``` to ```DB_DATABASE=superdatabaseformyproject```
 
-##Configure Host Machine
+## Configure Host Machine
 
 Edit your host file so you can render the site:
 
@@ -56,7 +56,7 @@ Finally provision the site with Vagrant from your Homestead directory (most like
 
 ```vagrant provision```
 
-##Install Laravel NPM Dependencies
+## Install Laravel NPM Dependencies
 
 Navigate to your projects root Laravel directory (probably ```~/Code/superproject```) . Update your ```package.json``` with the following:
 
@@ -144,7 +144,7 @@ elixir(function(mix) {
 });
 ```
 
-##Create new Vue-CLI project using this template
+## Create new Vue-CLI project using this template
 
 Ok, so at this point we could go to http://localhost:8000 and see the Laravel 5 welcome screen. Great. Now, let's get some awesome Vue JS in there! 
 
@@ -158,7 +158,7 @@ Call the directory that was just made (in my case ```my-vue-project```) and run:
 
 ```npm install```
 
-##Inserting your Vue JS app in your blade template
+## Inserting your Vue JS app in your blade template
 
 So, let's assume you've followed my steps and are working from a fresh Laravel installation. I'm going to crack open ```~/Code/superproject/resources/views/welcome.blade.php``` and replace the body with:
 
